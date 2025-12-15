@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    color: #333;
+}
+
+a {
+    color: #1565c0;
+    text-decoration: none;
+}
+
+.centered {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+    margin-bottom: 18px;
+}
+
+.layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.topbar {
+    background: #0d47a1;
+    color: #fff;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbar .muted {
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.9rem;
+}
+
+.alert {
+    padding: 12px 14px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+}
+
+.alert.error {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+}
+
+.alert.success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+}
+
+.form {
+    display: grid;
+    gap: 12px;
+}
+
+.form.two-col {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.form label {
+    display: grid;
+    gap: 6px;
+    font-weight: 600;
+    color: #444;
+}
+
+.form input,
+.form textarea,
+.form select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+}
+
+.form textarea {
+    resize: vertical;
+}
+
+.form .inline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+.form .full {
+    grid-column: 1 / -1;
+}
+
+button,
+.button {
+    background: #1565c0;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    text-align: center;
+}
+
+.button.ghost {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: #fff;
+}
+
+.button.ghost-blue {
+    background: transparent;
+    border: 1px solid #1565c0;
+    color: #1565c0;
+}
+
+button:hover,
+.button:hover {
+    background: #0d47a1;
+}
+
+.danger {
+    background: #c62828;
+}
+
+.muted {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th,
+table td {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background: #f0f4ff;
+    font-weight: 700;
+}
+
+table tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.center {
+    text-align: center;
+}
+
+.grid-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
